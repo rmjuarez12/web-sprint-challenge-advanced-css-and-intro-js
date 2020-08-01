@@ -246,17 +246,37 @@ console.log(`Now it is ${artists[8].name}. It is fixed now!`);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
 function getArtistByIndex(array, index) {
-  /* code here */
+  // Variable with the string, to return
+  const queriedArtist = `The artist at index ${index} is ${array[index].name}.`;
+
+  // Return the output
+  return queriedArtist;
 }
+
+console.log(getArtistByIndex(artists, 0));
 
 /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */) {
-  /* Code here */
+function get20s(data) {
+  // Declare the array to return
+  let artists20s = [];
+
+  for (let i = 0; i < data.length; i++) {
+    for (let j = 1900; j <= 2000; j++) {
+      if (data[i].years.includes(j)) {
+        artists20s.push(data[i].name);
+      }
+    }
+  }
+
+  // Return the array
+  return artists20s;
 }
+
+console.log(get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -268,9 +288,18 @@ function get20s(/* Code here */) {
  *
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.
  */
-function removeArtist(/*code here*/) {
-  /* code here */
+
+console.log("The artists array length are currently:", artists.length);
+
+function removeArtist(array, index) {
+  // Remove the item from the array
+  array.splice(index, 1);
+
+  // console.log() the remaning number of artists
+  console.log("New length of array after function runs:", array.length);
 }
+
+removeArtist(artists, 7);
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -284,10 +313,26 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
 At the end, this function should return the new array with information added"*/
+const myInfo = {
+  id: artists.length + 1,
+  name: "Richard Rodriguez",
+  years: "1989 - Present",
+  genre: "Web Development",
+  nationality: "USA",
+  bio:
+    "Richard Rodriguez loves Web Development quite a lot. Coding was something that he is incredibly passionate about!",
+  websites: 10,
+};
 
-function addArtist(/* Code here */) {
-  /* Code here */
+function addArtist(newObj) {
+  // Add the provided object to the artists array
+  artists.push(newObj);
+
+  // Return the new array
+  return artists;
 }
+
+console.log("The new array with the new obj added:", addArtist(myInfo));
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -297,9 +342,21 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */) {
-  /* Code here */
+function lotsOfArt(data) {
+  // Declare the array to return
+  let artistsNames = [];
+
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].paintings > 100) {
+      artistsNames.push(data[i].name);
+    }
+  }
+
+  // Variable to return
+  return artistsNames;
 }
+
+console.log("These artists have more than 100 paintings:", lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 

@@ -62,7 +62,7 @@ _Before you jump in, take 10 minutes to review the code that has already been pr
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
-Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) to find the challenges below.
+- [x] Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) to find the challenges below.
 
 ### Task 3: Stretch Problems
 
