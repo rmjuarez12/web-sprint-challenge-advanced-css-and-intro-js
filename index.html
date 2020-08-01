@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav role="navigation">
             <a href="#" class="active">Home</a>
             <span></span>
             <a class="bordered" href="#">About</a>
@@ -24,15 +24,15 @@
     <section class="title-container">
         <div>
             <h1>50 Influential<br>Artists</h1>
-            <button>Contact Us</button>
+            <button role="button">Contact Us</button>
         </div>
         <hr>
     </section><!-- .title-container -->
 
-    <section class="artists-container">
-        <div class="artist">
-            <img
-                src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg" />
+    <section class="artists-container" role="main">
+        <div class="artist" role="img" aria-labelledby="Starry Night by Vincent van Gogh">
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"
+                alt="Starry Night" />
             <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> Vincent Van Gogh</a>
             <div class="bio">Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29
                 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures
@@ -43,9 +43,9 @@
                 successful, and his suicide at 37 followed years of mental illness and poverty.</div>
         </div>
 
-        <div class="artist">
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/600px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg" />
+        <div class="artist" role="img" aria-labelledby="The Fighting Temeraire by Joseph Mallord William Turner">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/600px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg"
+                alt="The Fighting Temeraire" />
             <a href="https://en.wikipedia.org/wiki/J._M._W._Turner"> Joseph Mallord William Turner</a>
             <div class="bio">Joseph Mallord William Turner (23 April 1775 – 19 December 1851), known as J. M. W. Turner
                 and contemporarily as William Turner, was an English Romantic painter, printmaker and water colourist.

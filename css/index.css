@@ -214,16 +214,11 @@ button:hover {
 }
 
 /* Responsive Styling */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   nav {
     width: 100%;
     justify-content: center;
     margin: 25px auto;
-  }
-
-  nav a {
-    font-size: 2rem;
-    padding: 0 15px;
   }
 
   .title-container {
@@ -237,21 +232,9 @@ button:hover {
     margin: 0 auto 20px;
   }
 
-  .title-container h1 {
-    font-size: 5rem;
-    line-height: 1.2em;
-    margin-bottom: 10px;
-  }
-
   button {
     padding: 10px 25px;
     font-size: 16px;
-  }
-
-  .title-container hr {
-    width: 100%;
-    border-width: 2px;
-    margin-bottom: 20px;
   }
 
   .artists-container {
@@ -260,13 +243,36 @@ button:hover {
   }
 
   .artist {
-    width: 100%;
+    width: 70%;
     text-align: center;
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
   }
 
   .artist img {
     height: auto !important;
     margin-bottom: 20px;
+  }
+
+  .title-container hr {
+    width: 100%;
+    border-width: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav a {
+    font-size: 2rem;
+    padding: 0 15px;
+  }
+
+  .title-container h1 {
+    font-size: 5rem;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .artist {
+    width: 100%;
   }
 }
