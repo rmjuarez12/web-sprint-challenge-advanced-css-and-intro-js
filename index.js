@@ -381,15 +381,47 @@ Create a function called `getHTML()` that takes the parameter `data` and uses a 
 The function should console.log 50 chunks of HTML code that match the structure above. 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
+function getHTML(data) {
+  // Declare the variable to return
+  let output = "";
 
-function getHTML(/* Code here */) {
-  /* Code here */
+  for (let i = 0; i < data.length; i++) {
+    output += `
+                <div id="artist">
+                  <div class="image">
+                      <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+                  </div>
+                  <div class = "name">
+                    <a href="${data[i].wikipedia}">${data[i].name}</a>
+                  </div>
+                  <div class = "bio">${data[i].bio}</div>
+                </div>
+                `;
+  }
+
+  // Return the output
+  return output;
 }
+
+console.log("This is the list of artists with HTML structure:", getHTML(artists));
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */) {
-  /* Code here */
+function randomize(data) {
+  // Declare the array to return
+  let randomArr = [];
+
+  for (let i = 0; i < data.length; i++) {
+    // Declare the RNG number range
+    let randomIndex = Math.floor(Math.random() * data.length);
+
+    randomArr.push(data[randomIndex]);
+  }
+
+  // Return the random array
+  return randomArr;
 }
+
+console.log("Array that randomizes the original array order(see IDs that are random):", randomize(artists));
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
