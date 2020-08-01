@@ -266,7 +266,9 @@ function get20s(data) {
 
   for (let i = 0; i < data.length; i++) {
     for (let j = 1900; j <= 2000; j++) {
-      if (data[i].years.includes(j)) {
+      const convertInt = j.toString();
+
+      if (data[i].years.includes(convertInt + " - ")) {
         artists20s.push(data[i].name);
       }
     }
@@ -276,7 +278,7 @@ function get20s(data) {
   return artists20s;
 }
 
-console.log(get20s(artists));
+console.log("Artists from the 20th century:", get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
