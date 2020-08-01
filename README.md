@@ -23,11 +23,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+**A: Accessibility is a way in which we can make a site accessible for different type of people and different devices. For example, someone who may be color blind may have a harder time to read text with bad contrast to the background(like a dark text on dark background). One way you can make it accessible is to ensure there is good contrast. It is very important to keep in mind that the users visiting a website may have some impairments, so making your website with accessibility in mind is very important.**
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+**A: One of the main things to make your website accessible is to ensure your content is easily readable. You can do this by making sure the text is big enough for someone with vision disabilities to be able to read it easily, as well as ensuring the text is on a a background that can compliment(i.e. light text on dark background). Another way is to ensure that the content of your website is responsive, meaning, that it can be viewed well on mobile devices(or smaller screens). This is also very important as, in today's generation, many prefer to access a website through their mobile device. Creating a website that does not work well on mobile devices is a mistake you must never do. One last example is to use substantial captions on your media(like videos, images, etc.). For images, using the alt attribute can help in identifying what the image is in case it does not loads, and adding a title attribute helps in knowing what the image is when you hover your mouse over. Accessibility is very important and must always be present.**
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+**A: A variable is something like a container that is able to hold data. Think of it as a box where you can put many types of things. The data stored in a variable is used to help facilitate referencing to that specific information many times by giving it a unique name. This not only helps us have a name to reference the data easily, but in case we need to change that specific piece of data, we just need to change the data in the variable, and every reference for it will also follow through. Variable are incredibly important, especially for functions, since this helps make the content more dynamic. This means that we can manage the content in a much easier fashion, as oppose to hard coding data.**
+
 4. What is the purpose of using functions in code?
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+**A: A function helps a developer facilitate the delivery of data. It helps on not repeating a line of code over and over and over again and end up with hundreds of line of code that does the same thing, but with different data. For example, let's say you have a list of 100 users, and you want for each user to have a welcome message. You could write a lot of code and conditionals to make one for each, but that is way too time consuming, plus it makes your files much heavier, since you are writing a lot of lines of codes. This is where a function will come in handy. You can create a single function that will take the name of the user and then output a message for it. This saves us from creating a lot of unnecessary conditionals and spending too much time coding that.**
+
+---
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -35,30 +48,29 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your Team Lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your Team Lead as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
-### Task 2a:  Minimum Viable Product - Responsive Design
+### Task 2a: Minimum Viable Product - Responsive Design
 
-*Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
+_Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css)._
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+- [x] Add a viewport meta tag to the head of your index.html page.
+- [x] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
-Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) to find the challenges below.
+- [x] Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) to find the challenges below.
 
 ### Task 3: Stretch Problems
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)  
-* [ ] Student demonstrates and can explain a deep understanding of basic programming concepts, when walking Team Lead through the explaination of their code.
-* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
-
+- [x] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)
+- [ ] Student demonstrates and can explain a deep understanding of basic programming concepts, when walking Team Lead through the explaination of their code.
+- [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
 
 ## Resources
 
@@ -72,6 +84,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master
