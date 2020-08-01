@@ -265,12 +265,12 @@ function get20s(data) {
   let artists20s = [];
 
   for (let i = 0; i < data.length; i++) {
-    for (let j = 1900; j <= 2000; j++) {
-      const convertInt = j.toString();
+    // Get the year born/died
+    const yearBorn = parseInt(data[i].years.substr(0, 4));
+    const yearDead = parseInt(data[i].years.substr(-4));
 
-      if (data[i].years.includes(convertInt + " - ")) {
-        artists20s.push(data[i].name);
-      }
+    if (yearBorn >= 1900 && yearDead <= 2000) {
+      artists20s.push(data[i].name);
     }
   }
 
